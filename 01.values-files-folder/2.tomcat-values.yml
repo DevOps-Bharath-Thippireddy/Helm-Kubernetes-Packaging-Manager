@@ -1,0 +1,4 @@
+tomcatPassword: DmmZH55GUY
+service: 
+   type: NodePort
+   nodePort: 30007
