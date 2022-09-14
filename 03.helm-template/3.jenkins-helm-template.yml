@@ -175,3 +175,6 @@ spec:
         - name: jenkins-data
           persistentVolumeClaim:
             claimName: jenkins
+
+
+
