@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-  {{.values.my.custom.data}}
+  {{.Values.my.custom.data}}
 metadata:
   name: {{ include "firstchart.fullname" . }}
   labels:
