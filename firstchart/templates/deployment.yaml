@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
    {{ .Values.replicaCount}}
+   {{.Chart.AppVersion}}
 metadata:
   name: {{ include "firstchart.fullname" . }}
   labels:
