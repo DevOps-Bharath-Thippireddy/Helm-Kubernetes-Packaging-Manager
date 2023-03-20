@@ -13,3 +13,6 @@ spec:
       name: http
   selector:
     {{- include "firstchart.selectorLabels" . | nindent 4 }}
+
+
+
