@@ -2,6 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
    {{ .Values.replicaCount}}
    {{.Chart.AppVersion}}
+   {{- if .Values.my.flag}}
+   {{"output of if" | nindent 2}}
+   {{- else}}
+   {{"output of else" | nindent 2}}
+   {{- end}}
 metadata:
   name: {{ include "firstchart.fullname" . }}
   labels:
